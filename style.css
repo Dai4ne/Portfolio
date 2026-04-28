@@ -41,3 +41,9 @@ a.nav {
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.278);
 }
 
+.curriculo:hover {
+    background-color: #600606;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.53);
+    transition: 0.7s;
+    transform: translateY(-4px);
+}
