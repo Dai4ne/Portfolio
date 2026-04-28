@@ -9,45 +9,72 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    
     <title>Daiane Karine</title>
 </head>
-<body class="bg-[#F7F0CC]">
-    <header class="bg-[#600606] text-[#F7F0CC]
-    font-lexend md:px-16 md:py-8 ">
 
-        <div class="max-w-6xl mx-auto">
-            <div class="flex justify-between items-start">
-                <h1 class="text-4xl md:text-5xl font-bold  tracking-tight">
+<body class="bg-[#F7F0CC] font-lexend ">
+
+    <header class="bg-[#600606] text-[#F7F0CC] md:py-8 ">
+
+        <!--Bem vindo e me chamo-->
+        <div class="flex justify-between mb-16 mx-auto max-w-7xl">
+            <div class="">
+                <h1 class="text-4xl mb-20 md:text-8xl font-bold ">
                     Bem vindo!
                 </h1>
-                
-                <img src="img/star1-portfolio.png" alt="Logo Estrela" class="w-24 h-24 md:w-40 md:h-40 object-contain">
-            </div>
 
-            <!--Me chamo-->
-            <div class="mb-20 md:mb-32">
-                <p class="text-xl md:text-2xl font-medium ">
+                <p class="-mb-2 text-xl md:text-4xl font-medium ">
                     Me chamo...
                 </p>
-                <p class="text-6xl md:text-8xl font-bold tracking-tighter -mb-3">
+                
+                <p class="text-6xl md:text-8xl font-bold tracking-tighter -mb-4 -ms-2">
                     Daiane
                 </p>
-                <p class="text-[#AE2C2C] text-6xl md:text-7xl font-bold tracking-tighter">
+                <p class="text-[#AE2C2C] text-6xl md:text-7xl font-bold tracking-tighter -ms-2">
                     Karine
                 </p>
             </div>
 
-            <!--Navbar-->
-            <nav>
-                <ul class="flex flex-wrap justify-evenly md:justify-start gap-x-12 gap-y-4 text-lg md:text-xl font-normal">
-                    <li><a href="#" class="hover:underline">Sobre mim</a></li>
-                    <li><a href="#" class="hover:underline">Jornada acadêmica</a></li>
-                    <li><a href="#" class="hover:underline">Projetos</a></li>
-                    <li><a href="#" class="hover:underline">Habilidades</a></li>
-                    <li><a href="#" class="hover:underline">Contato</a></li>
-                </ul>
-            </nav>
+            <div>
+                <img src="img/star1-portfolio.png" alt="Logo Estrela" class="logoheader w-24 h-24  md:w-64 md:h-64 object-contain">
+            </div>
+
         </div>
+
+        <!--Navbar-->
+        <nav class="max-w-7xl mx-auto">
+            <ul class="flex flex-nowrap justify-evenly gap-x-36 text-lg md:text-xl font-medium">
+                <li><a href="#sobremim" class="nav p-3">Sobre mim</a></li>
+                <li><a href="#" class="nav p-3">Jornada acadêmica</a></li>
+                <li><a href="#" class="nav p-3">Projetos</a></li>
+                <li><a href="#" class="nav p-3">Habilidades</a></li>
+                <li><a href="#" class="nav p-3">Contato</a></li>
+            </ul>
+        </nav>
+        
     </header>
+
+    <main>
+
+        <!--Sobre mim--> 
+        <div class="flex justify-center max-w-5xl mt-36">
+            <div>
+                <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight" id="sobremim">Sobre mim</h1>
+            
+                <p class="text-[#600606] text-xl font-medium max-w-2xl my-3">Atual estudante de Desenvolvimento de Software pela FATEC Prof. Jessen Vidal e formada em técnico de Desenvolvimento de Sistemas pela ETEC.</p>
+                <p class="text-[#600606] text-xl font-medium max-w-2xl">Minhas áreas de interesse são o Front-End e Design Digital, focando em interfaces funcionais e visualmente agradáveis e precisas ao usuário.</p>
+
+                <a href="" class="curriculo bg-[#AE2C2C] text-[#F7F0CC] inline-block text-xl py-3 px-4 rounded-sm mt-8">Veja meu currículo!</a>
+            </div>
+            
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
