@@ -24,3 +24,16 @@ logo.addEventListener('mouseleave', () => {
         logo.style.animation = 'rotacionar 3s ease-out forwards';
     }
 });
+
+//modal dos certificados
+function abrirModal(titulo, descricao) {
+    document.getElementById('modal-titulo').textContent = titulo;
+    document.getElementById('modal-descricao').textContent = descricao;
+    document.getElementById('modal').classList.remove('hidden');
+    document.getElementById('overlay').classList.remove('hidden');
+}
+
+function fecharModal() {
+    document.getElementById('modal').classList.add('hidden');
+    document.getElementById('overlay').classList.add('hidden');
+}

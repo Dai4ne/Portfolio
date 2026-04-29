@@ -47,3 +47,12 @@ a.nav {
     transition: 0.7s;
     transform: translateY(-4px);
 }
+
+.eu{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.482);
+}
+
+.github, .skill {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
