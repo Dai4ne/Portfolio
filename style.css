@@ -52,7 +52,30 @@ a.nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.482);
 }
 
-.github, .skill {
+.github, .skill, #formas-contato {
     font-family: "Pixelify Sans", sans-serif;
 }
 
+/*Contato - animação do email*/
+.email {
+    transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.email::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #d2caa0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.email:hover::before {
+    height: 80%;
+}

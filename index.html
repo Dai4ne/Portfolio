@@ -43,8 +43,8 @@
         </div>
 
         <!--Navbar-->
-        <nav class="max-w-6xl mx-auto">
-            <ul class="flex flex-nowrap justify-evenly md:gap-x-24 text-lg md:text-xl font-medium">
+        <nav class="w-full mx-auto z-50 bg-[#600606] py-4">
+            <ul class="flex flex-nowrap justify-evenly md:gap-x-24 text-lg md:text-xl font-medium text-[#F7F0CC]">
                 <li><a href="#sobremim" class="nav p-2">Sobre mim</a></li>
                 <li><a href="#jornada" class="nav p-2">Jornada acadêmica</a></li>
                 <li><a href="#projetos" class="nav p-2">Projetos</a></li>
@@ -65,11 +65,11 @@
                 <p class="text-[#600606] text-xl font-medium max-w-xl my-3">Atual estudante de Desenvolvimento de Software pela FATEC Prof. Jessen Vidal e formada em técnico de Desenvolvimento de Sistemas pela ETEC.</p>
                 <p class="text-[#600606] text-xl font-medium max-w-xl">Minhas áreas de interesse são o Front-End e Design Digital, focando em interfaces funcionais e visualmente agradáveis e precisas ao usuário.</p>
 
-                <a href="" class="curriculo bg-[#AE2C2C] text-[#F7F0CC] inline-block text-xl py-3 px-4 rounded-sm mt-8">Veja meu currículo!</a>
+                <a href="img/Currículo - Daiane.pdf" target="_blank" class="curriculo bg-[#AE2C2C] text-[#F7F0CC] inline-block text-xl py-3 px-4 rounded-sm mt-8">Veja meu currículo!</a>
             </div>
             
             <div>
-                <img src="img/eu.JPG" alt="" class="eu md:w-56 md:h-56 rotate-84">
+                <img src="img/eu.JPG" alt="" class="eu md:w-64 md:h-auto rotate-84">
             </div>
         </section>
 
@@ -104,56 +104,36 @@
 
 
         <!--Projetos-->
-        <section class="" id="projetos">
-            <div class="flex justify-start mt-24">
+        <section class="grid lg:grid-cols-3 justify-center mt-8 gap-4">
+
+            <!-- Card grande: ocupa 2 colunas -->
+            <article class="bg-[#e9e0b5] col-span-2 h-80 p-6">
                 <div>
-                    <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight block" id="jornada">Projetos</h1>
+                    <h4 class="text-[#600606] font-bold text-xl">Radar Cidadão</h4>
+                    <a href="https://github.com/APILumina/API1_DSM_Lumina.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
                 </div>
-            </div>
-            
-            <section class="grid lg:grid-cols-2 justify-center mt-8 gap-12">
+            </article>
 
-                <article class="bg-[#e9e0b5] flex items-end h-60 w-md p-6">
-                    <img src="" alt="">
-
-                    <div>
-                        <h4 class="text-[#600606] font-bold text-xl">CEC</h4>
-                    
-                        <a class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                    </div>   
-                </article>
-
-                <article class="bg-[#e9e0b5] flex items-end h-60 w-md p-6">
-                    <img src="" alt="">
-
-                    <div>
-                        <h4 class="text-[#600606] font-bold text-xl">Web App</h4>
-                    
-                        <a class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                    </div>   
-                </article>
-
-                <article class="bg-[#e9e0b5] flex items-end h-60 w-md p-6">
-                    <img src="" alt="">
-
-                    <div>
-                        <h4 class="text-[#600606] font-bold text-xl">Radar Cidadão</h4>
-                    
-                        <a class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                    </div>
-                </article>
-
-                <article class="bg-[#e9e0b5] flex items-end h-60 w-md p-6">
-                    <img src="" alt="">
-
-                    <div>
-                        <h4 class="text-[#600606] font-bold text-xl">Universidade Veritas</h4>
-                    
-                        <a class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                    </div>
-                </article>
+            <!-- Coluna da direita com 3 cards empilhados -->
+            <div class="flex flex-col gap-4">
                 
-            </section>
+                <article class="bg-[#e9e0b5] flex-1 p-4">
+                    <h4 class="text-[#600606] font-bold text-xl">CEC</h4>
+                    <a href="https://github.com/Dai4ne/TCC_CEC.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
+                </article>
+
+                <article class="bg-[#e9e0b5] flex-1 p-4">
+                    <h4 class="text-[#600606] font-bold text-xl">Web App</h4>
+                    <a href="https://github.com/Dai4ne/Web_App.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
+                </article>
+
+                <article class="bg-[#e9e0b5] flex-1 p-4">
+                    <h4 class="text-[#600606] font-bold text-xl">Universidade Veritas</h4>
+                    <a href="https://github.com/Dai4ne/Design-Digital.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
+                </article>
+
+            </div>
+
         </section>
 
         <!--Linha de divisão-->
@@ -229,15 +209,32 @@
         
 
         <!--Contato-->
-        <section class="flex justify-center items-center" id="contato">
-            <div>
-                <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight" id="sobremim">Contato</h1>
+        <section class="" id="contato">
+            <div class="flex justify-center items-center">
+                <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight mb-12" id="sobremim">Contato</h1>
             </div>
             
-            <div class="bg-[#e9e0b5] flex justify-center ">
-
+            <!--email-->
+            <div class="flex justify-start mb-5" id="formas-contato">
+                <a class="email text-3xl ml-18 ">daianeksilva07@gmail.com</a>
             </div>
-           
+
+            <!--outros-->
+            <div class="flex flex-col gap-2 justify-start font-semibold" id="">
+                <div class="flex justify-start gap-2 ml-18">
+                    <img src="https://img.shields.io/badge/Instagram-FF0069?style=for-the-badge&logo=Instagram&logoColor=white" alt="Tailwind CSS">
+                </div>   
+
+                <div class="flex justify-start gap-2 ml-18">
+                    <img src="https://img.shields.io/badge/Github-6e5494?style=for-the-badge&logo=Github&logoColor=white" alt="Tailwind CSS">
+                </div>
+
+                <div class="flex justify-start gap-2 ml-18">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+                </div> 
+                
+            </div>
+        
         </section>
 
     </main>
