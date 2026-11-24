@@ -13,18 +13,6 @@ logo.addEventListener('animationend', () => {
     }
 });
 
-logo.addEventListener('mouseenter', () => {
-    if (entradaConcluida) {
-        logo.style.animation = 'rotacionar 3s linear infinite';
-    }
-});
-
-logo.addEventListener('mouseleave', () => {
-    if (entradaConcluida) {
-        logo.style.animation = 'rotacionar 3s ease-out forwards';
-    }
-});
-
 
 //Navbar fixa 
 const nav = document.querySelector('nav');

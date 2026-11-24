@@ -5,71 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     
+    <style type="text/tailwindcss">
+        @theme {
+            --color-bg: #F8F5E4;
+            --color-light-yellow: #FCF6DE; 
+            --color-dark-red: #600606;
+            --color-light-red: #AE2C2C;
+            --color-dark-cyan: #04506C;
+            --font-roboto: "Roboto Serif", serif;
+            --font-geist: "Geist Mono", monospace 
+        }
+    </style>
     <title>Daiane Karine</title>
 </head>
 
-<body class="bg-[#F7F0CC] font-lexend">
+<body class="bg-bg">
 
-    <header class="bg-[#600606] text-[#F7F0CC] md:py-8 ">
+    <header class="bg-dark-red text-light-yellow h-dvh w-full mb-8 px-6 md:py-8 flex items-center">
 
-        <!--Bem vindo e me chamo-->
-        <div class="flex justify-between items-center mb-16 mx-auto lg:gap-80 max-w-max">
-            <div class="">
-                <h1 class="text-4xl mb-20 md:text-8xl font-bold ">
-                    Bem-vindo!
-                </h1>
+        <div class="w-full max-w-3xl mx-auto mb-16">
+            
+            <h1 class="text-5xl mb-5 md:text-8xl font-roboto font-medium">
+                Bem-vindo!
+            </h1>
 
-                <p class="-mb-2 text-xl md:text-4xl font-medium ">
-                    Me chamo...
-                </p>
+            <!-- Bloco do nome + estrela ocupando 100% da largura -->
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 ms-2">
+                <div>
+                    <p class="text-xl md:text-4xl font-normal font-roboto italic mb-2 scale-y-108 origin-bottom ">
+                        Me chamo...
+                    </p>
+                    
+                    <p class="text-6xl md:text-8xl font-geist font-bold tracking-wide">
+                        Daiane
+                    </p>
+                    <p class="text-light-red text-6xl md:text-7xl font-roboto font-medium italic tracking-tighter -mt-4 md:-mt-6">
+                        Karine
+                    </p>
+                </div>
                 
-                <p class="text-6xl md:text-8xl font-bold tracking-tighter -mb-4 -ms-2">
-                    Daiane
-                </p>
-                <p class="text-[#AE2C2C] text-6xl md:text-7xl font-bold tracking-tighter -ms-2">
-                    Karine
+                <div>
+                    <img src="img/star1-portfolio.png" alt="Logo Estrela" class="logoheader w-40 h-40 md:w-56 md:h-56 object-contain">
+                </div>
+            </div> 
+
+            <!-- Linha dinâmica + Texto fixo em 2 linhas -->
+            <div class="flex items-end gap-6 mt-8 ms-2">
+                <div class="flex-1 h-[1px] bg-light-yellow opacity-60 mb-1.5"></div>
+
+                <p class="shrink-0 text-sm md:text-base font-geist italic text-right leading-snug">
+                    Role para baixo para<br>
+                    ver mais!
                 </p>
             </div>
-
-            <div>
-                <img src="img/star1-portfolio.png" alt="Logo Estrela" class="logoheader w-24 h-24  md:w-64 md:h-64 object-contain">
-            </div>
-
         </div>
-
-        <!--Navbar-->
-        <nav class="w-full mx-auto z-50 bg-[#600606] py-4">
-            <ul class="flex flex-nowrap justify-evenly md:gap-x-24 text-lg md:text-xl font-medium text-[#F7F0CC]">
-                <li><a href="#sobremim" class="nav p-2">Sobre mim</a></li>
-                <li><a href="#jornada" class="nav p-2">Jornada acadêmica</a></li>
-                <li><a href="#projetos" class="nav p-2">Projetos</a></li>
-                <li><a href="#habilidades" class="nav p-2">Habilidades</a></li>
-                <li><a href="#contato" class="nav p-2">Contato</a></li>
-            </ul>
-        </nav>
-        
     </header>
 
-    <main class="lg:max-w-5xl mx-auto mt-40">
+    <!--Navbar ARRUMAR AQUI -->
+    <nav class="grid grid-cols-1 justify-items-end z-50 py-4 font-geist max-w-5xl">
+        <ul class="flex flex-nowrap md:gap-x-6 text-sm font-medium text-[#F7F0CC]">
+            <li><a href="#sobremim" class="nav p-2 card-light-red">sobre mim</a></li>
+            <li><a href="#skills" class="nav p-2 card-dark-cyan">skills</a></li>
+            <li><a href="#projetos" class="nav p-2 card-dark-red">projetos</a></li>
+            <li><a href="#certificados" class="nav p-2 card-light-red">certificados</a></li>
+            <li><a href="#extracurricular" class="nav p-2 card-dark-cyan">extracurricular</a></li>
+            <li><a href="#contato" class="nav p-2 card-light-red">contato</a></li>
+        </ul>
+
+        
+    </nav>
+        
+
+    <main class="lg:max-w-4xl mx-auto mt-24">
 
         <!--Sobre mim--> 
-        <section class="flex justify-start items-center space-x-56">
-            <div>
-                <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight" id="sobremim">Sobre mim</h1>
-            
-                <p class="text-[#600606] text-xl font-medium max-w-xl my-3">Atual estudante de Desenvolvimento de Software pela FATEC Prof. Jessen Vidal e formada em técnico de Desenvolvimento de Sistemas pela ETEC.</p>
-                <p class="text-[#600606] text-xl font-medium max-w-xl">Minhas áreas de interesse são o Front-End e Design Digital, focando em interfaces funcionais e visualmente agradáveis e precisas ao usuário.</p>
-
-                <a href="img/Currículo - Daiane.pdf" target="_blank" class="curriculo bg-[#AE2C2C] text-[#F7F0CC] inline-block text-xl py-3 px-4 rounded-sm mt-8">Veja meu currículo!</a>
+        <section class="">
+            <div class="flex justify-start items-center">
+                <h1 class="text-lg font-geist font-bold mb-5" id="sobremim">- sobre mim</h1>
             </div>
             
-            <div>
-                <img src="img/eu.JPG" alt="" class="eu md:w-64 md:h-auto rotate-84">
+            <!--Card-->
+            <div class="card-b-light-yellow px-8 py-5 font-geist font-semibold">
+                <div class="flex justify-between">
+                    <h1 class="text-xl text-dark-red  font-bold">Desenvolvedora de<span class="text-light-red font-roboto font-medium text-[27px] italic"> Software</span></h1>
+
+                    <img src="img/cyan star.png" alt="" class="h-12 w-12">
+                </div>
+                
+                <div class="w-[700px]">
+                    <p>> 19 anos</p>
+                    <p>> 2º semestre de <span class="font-extrabold">Desenvolvimento de Software 
+    Multiplataforma</span> pela FATEC Jessen Vidal (2026 - 2028).</p>
+                    <p>> Técnica em Desenvolvimento de Sistemas pela ETEC (2024 - 2025).</p> 
+                    <br>
+                    <p>> Meu objetivo é me aprimorar e me formar com excelência na área de <span class="font-extrabold">gestão de projetos, UI/UX e Front-End</span>, com interesse em aplicações web funcionais, intuitivas e bem estruradas, com integração de APIs REST focadas na experiência do usuário.</p>
+                </div>
+                
             </div>
         </section>
 
@@ -88,7 +126,7 @@
             
                 <!--Imagens certificados-->
             <section class="grid lg:grid-cols-4 place-items-center mt-8">
-                <article class="bg-[#e9e0b5] h-44 w-56"></article>
+                <article class="card-light-yellow bg-light-yellow h-44 w-56"></article>
                 <article class="bg-[#e9e0b5] h-44 w-56"></article>
                 <article class="bg-[#e9e0b5] h-44 w-56"></article>
                 <article class="bg-[#e9e0b5] h-44 w-56"></article>

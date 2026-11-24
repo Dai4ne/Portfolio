@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Federo&family=Lexend+Deca:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 .curriculo {
     font-family:  "Pixelify Sans", sans-serif;
@@ -36,10 +38,6 @@ a.nav {
     width: 100%;
 }
 
-/*Main*/
-.titulomain{
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.278);
-}
 
 .curriculo:hover {
     background-color: #600606;
@@ -52,8 +50,34 @@ a.nav {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.482);
 }
 
-.github, .skill, #formas-contato {
-    font-family: "Pixelify Sans", sans-serif;
+/* ------------------------ */
+/*CARDS COM BORDA*/
+.card-b-light-yellow {
+    background-color: #FCF6DE;
+    box-shadow: 5px 5px #600606;
+    border: 3px solid #600606;
+}
+
+.card-b-light-red {
+    background-color: #AE2C2C;
+    box-shadow: 5px 5px black;
+    border: 3px solid black;
+}
+
+/* CARDS SEM BORDA*/
+.card-light-red {
+    background-color: #AE2C2C;
+    box-shadow: 5px 5px #600606;    
+}
+
+.card-dark-cyan{
+    background-color: #04506C;
+    box-shadow: 5px 5px #600606; 
+}
+
+.card-dark-red{
+    background-color: #600606;
+    box-shadow: 5px 5px #AE2C2C; 
 }
 
 /*Contato - animação do email*/
