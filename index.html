@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,53 +11,54 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    
+
     <style type="text/tailwindcss">
         @theme {
             --color-bg: #F8F5E4;
-            --color-light-yellow: #FCF6DE; 
+            --color-light-yellow: #FCF6DE;
             --color-dark-red: #600606;
             --color-light-red: #AE2C2C;
             --color-dark-cyan: #155F7A;
             --font-roboto: "Roboto Serif", serif;
-            --font-geist: "Geist Mono", monospace 
+            --font-geist: "Geist Mono", monospace;
         }
     </style>
     <title>Daiane Karine</title>
 </head>
 
-<body class="dot-grid">
+<body class="dot-grid overflow-x-hidden">
 
-    <header class="bg-dark-red text-light-yellow h-dvh w-full mb-8 px-6 md:py-8 flex items-center">
+    <header class="bg-dark-red text-light-yellow min-h-dvh w-full mb-8 px-6 py-10 md:py-8 flex items-center">
 
-        <div class="w-full max-w-3xl mx-auto mb-16">
-            
-            <h1 class="text-5xl mb-5 mt-8 md:text-8xl font-roboto font-medium">
+        <div class="w-full max-w-3xl mx-auto md:mb-16">
+
+            <h1 class="text-5xl sm:text-6xl text-light-red mb-5 mt-8 md:text-8xl font-roboto font-semibold [text-shadow:4px_4px_0_#3d0404]">
                 Bem-vindo!
             </h1>
 
-            <!-- Bloco do nome + estrela ocupando 100% da largura -->
-            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 ms-2">
+            <!-- Bloco do nome + estrela -->
+            <div class="flex flex-row justify-between items-start sm:items-center gap-6 ms-2">
                 <div>
-                    <p class="text-xl md:text-4xl font-normal font-roboto italic mb-2 scale-y-108 origin-bottom ">
+                    <p class="text-xl md:text-4xl font-normal font-roboto italic mb-2 scale-y-108 origin-bottom">
                         Me chamo...
                     </p>
-                    
-                    <p class="text-6xl md:text-8xl font-geist font-bold tracking-wide">
+
+                    <p class="text-5xl sm:text-6xl md:text-8xl font-geist font-bold tracking-wide">
                         Daiane
                     </p>
-                    <p class="text-light-red text-6xl md:text-7xl font-roboto font-medium italic tracking-tighter -mt-4 md:-mt-6">
+                    <p class="text-light-red text-5xl sm:text-6xl md:text-7xl font-roboto font-medium italic tracking-tighter -mt-3 md:-mt-6">
                         Karine
                     </p>
                 </div>
-                
-                <div>
-                    <img src="img/star1-portfolio.png" alt="Logo Estrela" class="logoheader w-40 h-40 md:w-56 md:h-56 object-contain">
-                </div>
-            </div> 
 
-            <!-- Linha dinâmica + Texto fixo em 2 linhas -->
-            <div class="flex items-end gap-6 mt-8 ms-2">
+                <div>
+                    <img src="img/star1-portfolio.png" alt="Logo Estrela" class="logoheader w-36 h-36
+                    sm:w-48 sm:h-48 md:w-56 md:h-56 object-contain">
+                </div>
+            </div>
+
+            <!-- Linha dinâmica + texto -->
+            <div class="flex items-end gap-4 md:gap-6 mt-8 ms-2">
                 <div class="flex-1 h-[1px] bg-light-yellow opacity-60 mb-1.5"></div>
 
                 <p class="shrink-0 text-sm md:text-base font-geist italic text-right leading-snug">
@@ -68,158 +69,156 @@
         </div>
     </header>
 
-    <!--Navbar ARRUMAR AQUI -->
-    <nav class="grid grid-cols-1 justify-items-end z-50 py-4 font-geist max-w-5xl">
-        <ul class="flex flex-nowrap md:gap-x-6 text-sm font-medium text-[#F7F0CC]">
-            <li><a href="#sobremim" class="nav p-2 card-light-red">sobre mim</a></li>
-            <li><a href="#skills" class="nav p-2 card-dark-cyan">skills</a></li>
-            <li><a href="#projetos" class="nav p-2 card-dark-red">projetos</a></li>
-            <li><a href="#certificados" class="nav p-2 card-light-red">certificados</a></li>
-            <li><a href="#extracurricular" class="nav p-2 card-dark-cyan">extracurricular</a></li>
-            <li><a href="#contato" class="nav p-2 card-light-red">contato</a></li>
+    <!--Navbar-->
+    <nav class="px-4 py-4 font-geist max-w-5xl mx-auto">
+        <ul class="flex flex-wrap justify-end gap-x-2 gap-y-3 md:gap-x-6 text-xs sm:text-sm font-medium text-[#F7F0CC]">
+            <li><a href="#sobremim" class="nav p-2 card-light-red inline-block">sobre mim</a></li>
+            <li><a href="#skills" class="nav p-2 card-dark-cyan inline-block">skills</a></li>
+            <li><a href="#projetos" class="nav p-2 card-dark-red inline-block">projetos</a></li>
+            <li><a href="#certificados" class="nav p-2 card-light-red inline-block">certificados</a></li>
+            <li><a href="#extracurricular" class="nav p-2 card-dark-cyan inline-block">extracurricular</a></li>
+            <li><a href="#contato" class="nav p-2 card-light-red inline-block">contato</a></li>
         </ul>
-
-        
     </nav>
-        
 
-    <main class="lg:max-w-4xl mx-auto mt-24">
 
-        <!--SOBRE MIM--> 
-        <section id="sobremim">
+    <main class="lg:max-w-4xl mx-auto mt-12 md:mt-24 px-5 md:px-8 lg:px-0">
+
+        <!--SOBRE MIM-->
+        <section id="sobremim" class="scroll-mt-6">
             <div class="flex justify-start items-center">
                 <h1 class="text-lg font-geist font-bold mb-5">- sobre mim</h1>
             </div>
-            
-            <!--Card-->
-            <div class="card-b-light-yellow px-8 py-5 font-geist font-semibold">
-                <div class="flex justify-between">
-                    <h1 class="text-xl text-dark-red  font-bold">Desenvolvedora de<span class="text-light-red font-roboto font-medium text-[27px] italic"> Software</span></h1>
 
-                    <img src="img/cyan star.png" alt="" class="h-12 w-12">
+            <!--Card-->
+            <div class="card-b-light-yellow px-5 sm:px-8 py-5 font-geist font-semibold hover:rotate-1 transition">
+                <div class="flex justify-between items-start gap-3">
+                    <h1 class="text-lg sm:text-xl text-dark-red font-bold">Desenvolvedora de<span class="text-light-red font-roboto font-medium text-2xl sm:text-[27px] italic"> Software</span></h1>
+
+                    <img src="img/cyan star.png" alt="" class="h-10 w-10 sm:h-12 sm:w-12 shrink-0">
                 </div>
-                
-                <div class="w-[700px]">
+
+                <div class="w-full max-w-[700px] text-sm sm:text-base">
                     <p>> 19 anos</p>
-                    <p>> 2º semestre de <span class="font-extrabold">Desenvolvimento de Software 
-    Multiplataforma</span> pela FATEC Jessen Vidal (2026 - 2028).</p>
-                    <p>> Técnica em Desenvolvimento de Sistemas pela ETEC (2024 - 2025).</p> 
+                    <p>> 2º semestre de <span class="font-extrabold">Desenvolvimento de Software Multiplataforma</span> pela FATEC Jessen Vidal (2026 - 2028).</p>
+                    <p>> Técnica em Desenvolvimento de Sistemas pela ETEC (2024 - 2025).</p>
                     <br>
                     <p>> Meu objetivo é me aprimorar e me formar com excelência na área de <span class="font-extrabold">gestão de projetos, UI/UX e Front-End</span>, com interesse em aplicações web funcionais, intuitivas e bem estruradas, com integração de APIs REST focadas na experiência do usuário.</p>
                 </div>
-                
+
             </div>
         </section>
 
-        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
-        <img src="img/light red star.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-12">
+        <div class="w-full max-w-2xl mx-auto mt-14 md:mt-20 h-[1px] bg-light-red"></div>
+        <img src="img/light red star.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-10 md:mb-12">
 
 
         <!--SKILLS-->
-        <section class="font-geist" id="skills">
+        <section class="font-geist scroll-mt-6" id="skills">
             <div class="flex justify-start items-center">
-                <h1 class="text-lg font-geist font-bold mb-5" id="sobremim">- skills</h1>
+                <h1 class="text-lg font-geist font-bold mb-5">- skills</h1>
             </div>
 
             <!--HARDSKILLS-->
-            <section class="card-b-light-yellow py-5 px-8 mb-5">
+            <section class="card-b-light-yellow py-5 px-5 sm:px-8 mb-5">
                 <div class="flex flex-col items-end">
-                    <p class="text-light-red font-bold text-4xl">Hard<span class="font-roboto italic font-normal ">skills</span></p> 
+                    <p class="text-light-red font-bold text-3xl sm:text-4xl">Hard<span class="font-roboto italic font-normal">skills</span></p>
 
                     <div class="w-full max-w-2xl my-4 h-[1px] bg-light-red"></div>
                 </div>
 
-                <div class="flex justify-evenly gap-20">
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-8 sm:gap-x-10 md:gap-x-20 justify-items-start sm:justify-items-center">
                     <div>
-                        <h1 class="font-extrabold text-dark-cyan text-2xl">`front-end</h1>
-                        <p class="text-lg font-bold">> HTML</p>
-                        <p class="text-lg font-bold">> CSS</p>
-                        <p class="text-lg font-bold">> Boostrap</p>
-                        <p class="text-lg font-bold">> Tailwind</p>
-                        <p class="text-lg font-bold">> React</p>
-                    </div>
-                    
-                    <div>
-                        <h1 class="font-extrabold text-dark-cyan text-2xl">`back-end</h1>
-                        <p class="text-lg font-bold">> MySQL</p>
-                        <p class="text-lg font-bold">> APIs REST</p>
-                        <p class="text-lg font-bold">> Flask</p>
-                        <p class="text-lg font-bold">> NodeJS</p>
-                        <p class="text-lg font-bold">> ExpressJS</p>
+                        <h1 class="font-extrabold text-dark-cyan text-xl sm:text-2xl">`front-end</h1>
+                        <p class="text-base sm:text-lg font-bold">> HTML</p>
+                        <p class="text-base sm:text-lg font-bold">> CSS</p>
+                        <p class="text-base sm:text-lg font-bold">> Boostrap</p>
+                        <p class="text-base sm:text-lg font-bold">> Tailwind</p>
+                        <p class="text-base sm:text-lg font-bold">> React</p>
                     </div>
 
                     <div>
-                        <h1 class="font-extrabold text-dark-cyan text-2xl">`linguagens</h1>
-                        <p class="text-lg font-bold">> Python</p>
-                        <p class="text-lg font-bold">> Javascript</p>
-                        <p class="text-lg font-bold">> Typescript</p>
-                        <p class="text-lg font-bold">> SQL</p>
+                        <h1 class="font-extrabold text-dark-cyan text-xl sm:text-2xl">`back-end</h1>
+                        <p class="text-base sm:text-lg font-bold">> MySQL</p>
+                        <p class="text-base sm:text-lg font-bold">> Prisma</p>
+                        <p class="text-base sm:text-lg font-bold">> APIs REST</p>
+                        <p class="text-base sm:text-lg font-bold">> Flask</p>
+                        <p class="text-base sm:text-lg font-bold">> NodeJS</p>
+                        <p class="text-base sm:text-lg font-bold">> ExpressJS</p>
                     </div>
-                    
+
+                    <div class="col-span-2 sm:col-span-1">
+                        <h1 class="font-extrabold text-dark-cyan text-xl sm:text-2xl">`linguagens</h1>
+                        <p class="text-base sm:text-lg font-bold">> Python</p>
+                        <p class="text-base sm:text-lg font-bold">> Javascript</p>
+                        <p class="text-base sm:text-lg font-bold">> Typescript</p>
+                        <p class="text-base sm:text-lg font-bold">> SQL</p>
+                    </div>
+
                 </div>
             </section>
 
             <!--SOFTSKILLS E FERRAMENTAS-->
-            <section class="grid grid-cols-2 gap-5 items-start">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-5 items-start">
 
                 <!--Softskills e estrelas-->
-                <div class="flex flex-col gap-18">
-                    <section class="card-b-light-yellow py-5 px-8">
-                        <p class="text-light-red font-bold text-4xl">Soft<span class="font-roboto italic font-normal ">skills</span></p>
+                <div class="flex flex-col gap-8 md:gap-18">
+                    <section class="card-b-light-yellow py-5 px-5 sm:px-8">
+                        <p class="text-light-red font-bold text-3xl sm:text-4xl">Soft<span class="font-roboto italic font-normal">skills</span></p>
 
                         <div class="w-full max-w-[300px] my-4 h-[1px] bg-light-red"></div>
 
-                        <p class="text-lg font-bold">> Proatividade</p>
-                        <p class="text-lg font-bold">> Gestão de projetos</p>
-                        <p class="text-lg font-bold">> Comunicação</p>
-                        <p class="text-lg font-bold">> Pensamento crítico</p>
-                        <p class="text-lg font-bold">> Adaptabilidade</p>
+                        <p class="text-base sm:text-lg font-bold">> Proatividade</p>
+                        <p class="text-base sm:text-lg font-bold">> Gestão de projetos</p>
+                        <p class="text-base sm:text-lg font-bold">> Comunicação</p>
+                        <p class="text-base sm:text-lg font-bold">> Pensamento crítico</p>
+                        <p class="text-base sm:text-lg font-bold">> Adaptabilidade</p>
                     </section>
 
-                    <!--Estrelas-->
-                    <div class="flex items-end gap-1 pl-2">
+                    <!--Estrelas (só no desktop, onde sobra espaço embaixo do card)-->
+                    <div class="hidden md:flex items-end gap-1 pl-2">
                         <img src="img/cyan star.png" alt="" class="h-14 w-14">
                         <img src="img/light red star.png" alt="" class="h-8 w-8">
                     </div>
                 </div>
-                
-                <section class="card-b-light-red py-5 px-8 text-light-yellow">
-                    <p class="font-medium text-4xl font-roboto italic tracking-tighter">Ferramentas</p>
+
+                <section class="card-b-light-red py-5 px-5 sm:px-8 text-light-yellow">
+                    <p class="font-medium text-3xl sm:text-4xl font-roboto italic tracking-tighter">Ferramentas</p>
 
                     <div class="w-full max-w-[300px] my-4 h-[1px] bg-light-yellow"></div>
 
-                    <p class="text-lg font-semibold">> Figma</p>
-                    <p class="text-lg font-semibold">> Git & GitHub</p>
-                    <p class="text-lg font-semibold">> Jira</p>
-                    <p class="text-lg font-semibold">> Docker</p>
-                    <p class="text-lg font-semibold">> Google Colab</p>
-                    <p class="text-lg font-semibold">> Photoshop</p>
-                    <p class="text-lg font-semibold">> MySQL Workbench</p>
-                    <p class="text-lg font-semibold">> AWS</p>
-                    <p class="text-lg font-semibold">> Vercel</p>
+                    <p class="text-base sm:text-lg font-semibold">> Figma</p>
+                    <p class="text-base sm:text-lg font-semibold">> Git & GitHub</p>
+                    <p class="text-base sm:text-lg font-semibold">> Jira</p>
+                    <p class="text-base sm:text-lg font-semibold">> Docker</p>
+                    <p class="text-base sm:text-lg font-semibold">> Google Colab</p>
+                    <p class="text-base sm:text-lg font-semibold">> Photoshop</p>
+                    <p class="text-base sm:text-lg font-semibold">> MySQL Workbench</p>
+                    <p class="text-base sm:text-lg font-semibold">> AWS</p>
+                    <p class="text-base sm:text-lg font-semibold">> Vercel</p>
                 </section>
-            </section>     
+            </section>
         </section>
 
 
         <!--Linha de divisão-->
-        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
-        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-12">
+        <div class="w-full max-w-2xl mx-auto mt-14 md:mt-20 h-[1px] bg-light-red"></div>
+        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-10 md:mb-12">
 
         <!--PROJETOS-->
-        <div class="flex justify-start items-center">
+        <div class="flex justify-start items-center scroll-mt-6">
             <h1 class="text-lg font-geist font-bold mb-5">- projetos</h1>
         </div>
 
-        <section class="grid md:grid-cols-2 items-start gap-4" id="projetos">
-            
-            <!--Hive-->
-            <article class="card-b-light-yellow px-5 py-6 font-geist">
-                <!--Título e ano-->
-                <div class="flex justify-between">
-                    <h1 class=" text-dark-red font-bold text-3xl">HIVE</h1>
+        <section class="grid grid-cols-1 md:grid-cols-2 items-start gap-5 md:gap-4 scroll-mt-6" id="projetos">
 
-                    <div class="flex-col items-end text-end font-medium text-sm">
+            <!--Hive-->
+            <article class="card-b-light-yellow px-5 py-6 font-geist md:hover:rotate-1 transition">
+                <!--Título e ano-->
+                <div class="flex justify-between gap-2">
+                    <h1 class="text-dark-red font-bold text-3xl">HIVE</h1>
+
+                    <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
                         <p class="font-roboto italic -mb-2">2026</p>
                         <p class="font-roboto italic">acadêmico</p>
                     </div>
@@ -231,12 +230,12 @@
                 <div class="text-sm">
                     <p class="font-bold">Atuação:</p>
                     <p class="text-dark-cyan mb-5 font-medium">Produc Owner | Dev front-end | UI/UX</p>
-                    <P class="font-bold">Software desenvolvido para a Altave com objetivo de gerir Ordens de Serviço para projetos e manutenções, além de proporcionar maior clareza sobre as etapas de andamento das atividades aos funcionários.</P>
+                    <p class="font-bold">Software desenvolvido para a Altave com objetivo de gerir Ordens de Serviço para projetos e manutenções, além de proporcionar maior clareza sobre as etapas de andamento das atividades aos funcionários.</p>
                 </div>
 
                 <!--GitHub e tecnologias-->
                 <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
-                    <a href="https://github.com/leovmatiusso/API2_DSM_SprintingCheetahs" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+                    <a href="https://github.com/leovmatiusso/API2_DSM_SprintingCheetahs" target="_blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
 
                     <div class="flex flex-wrap justify-end gap-2 text-[13px]">
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MySQL</p>
@@ -251,12 +250,12 @@
             </article>
 
             <!--Radar Cidadão-->
-            <article class="card-b-light-yellow px-5 py-6 font-geist ">
+            <article class="card-b-light-yellow px-5 py-6 font-geist md:hover:rotate-1 transition">
                 <!--Título e ano-->
-                <div class="flex justify-between">
-                    <h1 class=" text-dark-red font-bold text-3xl">Radar<span class="font-roboto italic font-medium text-light-red"> Cidadão</span></h1>
+                <div class="flex justify-between gap-2">
+                    <h1 class="text-dark-red font-bold text-3xl">Radar<span class="font-roboto italic font-medium text-light-red"> Cidadão</span></h1>
 
-                    <div class="flex-col items-end text-end font-medium text-sm">
+                    <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
                         <p class="font-roboto italic -mb-2">2026</p>
                         <p class="font-roboto italic">acadêmico</p>
                     </div>
@@ -268,12 +267,12 @@
                 <div class="text-sm">
                     <p class="font-bold">Atuação:</p>
                     <p class="text-dark-cyan mb-5 font-medium">Produc Owner | Dev front-end | Gráficos em Python</p>
-                    <P class="font-bold">Aplicação web focada em transparecer dados da API da Câmara dos Deputados para ajudar eleitores, educadores e jornalistas com a compreenssão de informações técnicas para as eleições de 2026.</P>
+                    <p class="font-bold">Aplicação web focada em transparecer dados da API da Câmara dos Deputados para ajudar eleitores, educadores e jornalistas com a compreenssão de informações técnicas para as eleições de 2026.</p>
                 </div>
 
                 <!--GitHub e tecnologias-->
                 <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
-                    <a href="https://github.com/APILumina/API1_DSM_Lumina" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+                    <a href="https://github.com/APILumina/API1_DSM_Lumina" target="_blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
 
                     <div class="flex flex-wrap justify-end gap-2 text-[13px]">
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Tailwind</p>
@@ -287,12 +286,12 @@
 
 
             <!--Universidade Veritas-->
-            <article class="card-b-light-yellow px-5 py-6 font-geist ">
+            <article class="card-b-light-yellow px-5 py-6 font-geist md:hover:rotate-1 transition">
                 <!--Título e ano-->
-                <div class="flex justify-between">
-                    <h1 class=" text-dark-red font-bold text-3xl">Univ.<span class="font-roboto italic font-medium text-light-red"> Veritas</span></h1>
+                <div class="flex justify-between gap-2">
+                    <h1 class="text-dark-red font-bold text-3xl">Univ.<span class="font-roboto italic font-medium text-light-red"> Veritas</span></h1>
 
-                    <div class="flex-col items-end text-end font-medium text-sm">
+                    <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
                         <p class="font-roboto italic -mb-2">2026</p>
                         <p class="font-roboto italic">acadêmico</p>
                     </div>
@@ -303,12 +302,12 @@
                 <!--Atuação e contexto-->
                 <div class="text-sm">
                     <p class="text-dark-cyan mb-5 font-medium">Projeto feito sozinha</p>
-                    <P class="font-bold">Aplicação Web que simula o site de uma universidade, cujo objetivo foi aprimorar habilidades em Front-End com framework, Back-End em Python e Docker, com envio simples de formulário e persistência em banco de dados na nuvem.</P>
+                    <p class="font-bold">Aplicação Web que simula o site de uma universidade, cujo objetivo foi aprimorar habilidades em Front-End com framework, Back-End em Python e Docker, com envio simples de formulário e persistência em banco de dados na nuvem.</p>
                 </div>
 
                 <!--GitHub e tecnologias-->
                 <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
-                    <a href="https://github.com/Dai4ne/Universidade-Veritas" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+                    <a href="https://github.com/Dai4ne/Universidade-Veritas" target="_blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
 
                     <div class="flex flex-wrap justify-end gap-2 text-[13px]">
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Docker</p>
@@ -322,12 +321,12 @@
             </article>
 
             <!--CEC-->
-            <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist ">
+            <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist md:hover:rotate-1 transition">
                 <!--Título e ano-->
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-2">
                     <h1 class="font-bold text-3xl">CEC</h1>
 
-                    <div class="flex-col items-end text-end font-medium text-sm">
+                    <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
                         <p class="font-roboto italic -mb-2">2026</p>
                         <p class="font-roboto italic">acadêmico</p>
                     </div>
@@ -339,30 +338,29 @@
                 <div class="text-sm">
                     <p class="font-bold">Atuação:</p>
                     <p class="text-black mb-5 font-bold">Dev front-end | UI/UX | Gestora</p>
-                    <P class="font-bold">O CEC (Controle de Equipamentos do Candelária), foi o meu Trabalho de Conclusão de Curso de Desenvolvimento de Sistemas, onde o objetivo foi construir uma plataforma intuitiva e facilitadora para o cotidiano dos inspetores e professores ao usar os equipamentos eletrônicos disponíveis no meu ambiente escolar.</P>
+                    <p class="font-bold">O CEC (Controle de Equipamentos do Candelária), foi o meu Trabalho de Conclusão de Curso de Desenvolvimento de Sistemas, onde o objetivo foi construir uma plataforma intuitiva e facilitadora para o cotidiano dos inspetores e professores ao usar os equipamentos eletrônicos disponíveis no meu ambiente escolar.</p>
                 </div>
 
                 <!--GitHub e tecnologias-->
                 <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
-                    <a href="https://github.com/Dai4ne/TCC_CEC" target="_Blank" class="anim1 text-black font-extrabold text-base">github |</a>
+                    <a href="https://github.com/Dai4ne/TCC_CEC" target="_blank" class="anim1 text-black font-extrabold text-base">github |</a>
 
                     <div class="flex flex-wrap justify-end gap-2 text-[13px]">
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MySQL</p>
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Javascript</p>
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Bootstrap</p>
                         <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">PHP</p>
-
                     </div>
                 </div>
             </article>
 
-            <!--Sistema de relatorio in-app simples e estrelas ao lado-->
+            <!--Sistema de relatório in-app e estrelas ao lado-->
             <div class="md:col-span-2 flex items-end justify-between gap-4">
 
-                <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist w-full md:w-[640px]">
+                <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist w-full md:w-[640px] md:hover:rotate-1 transition">
                     <!--Título e ano-->
                     <div class="flex justify-between gap-2">
-                        <h1 class="font-bold text-3xl md:whitespace-nowrap">Sis. de <span class="font-roboto italic font-medium">Relatórios in-app</span></h1>
+                        <h1 class="font-bold text-2xl sm:text-3xl md:whitespace-nowrap">Sis. de <span class="font-roboto italic font-medium">Relatórios in-app</span></h1>
 
                         <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
                             <p class="font-roboto italic -mb-2">2026</p>
@@ -380,7 +378,7 @@
 
                     <!--GitHub e tecnologias-->
                     <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
-                        <a href="https://github.com/Dai4ne/Atividade1_DesenvolvimentoWebII" target="_Blank" class="anim1 text-black font-extrabold text-base">github |</a>
+                        <a href="https://github.com/Dai4ne/Atividade1_DesenvolvimentoWebII" target="_blank" class="anim1 text-black font-extrabold text-base">github |</a>
 
                         <div class="flex flex-wrap justify-end gap-2 text-[13px]">
                             <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Javascript</p>
@@ -399,123 +397,195 @@
 
         </section>
 
-        
 
         <!--Linha de divisão-->
-        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
-        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-18">
+        <div class="w-full max-w-2xl mx-auto mt-14 md:mt-20 h-[1px] bg-light-red"></div>
+        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-12 md:mb-18">
 
 
         <!--CERTIFICADOS-->
-        <div class="flex justify-start items-center" id="certificados">
+        <div class="flex justify-start items-center scroll-mt-6" id="certificados">
             <h1 class="text-lg font-geist font-bold mb-5">- certificados</h1>
         </div>
 
-        <section class="flex flex-wrap gap-6 text-light-yellow font-geist tracking-wide">
+        <section class="flex flex-wrap gap-5 md:gap-6 text-light-yellow font-geist tracking-wide">
 
-            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-dark-cyan w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Informática e Administração</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Informática e Administração</p>
                     <p class="text-sm ms-3">Fatore - 2022 à 2024</p>
                 </div>
-                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+                <img src="img/white star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-dark-cyan w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Técnica em Desenvolvimento de Sistemas</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Técnica em Desenvolvimento de Sistemas</p>
                     <p class="text-sm ms-3">ETEC - 2024 à 2025</p>
                 </div>
-                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+                <img src="img/white star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-dark-cyan w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Newton in a Box Stem Activities</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Newton in a Box Stem Activities</p>
                     <p class="text-sm ms-3">Aeroporto Embraer SJC - 22/05/2026</p>
                 </div>
-                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+                <img src="img/white star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-dark-cyan w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Escola de Inovadores</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Escola de Inovadores</p>
                     <p class="text-sm ms-3">Inova CPS - Nov 2026</p>
                 </div>
-                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+                <img src="img/white star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
         </section>
 
         <!--Linha de divisão-->
-        <div class="w-full max-w-2xl mx-auto m-20 h-[1px] bg-light-red "></div>
+        <div class="w-full max-w-2xl mx-auto my-14 md:my-20 h-[1px] bg-light-red"></div>
 
         <!--EXTRACURRICULAR-->
-        <div class="flex justify-start items-center" id="extracurricular">
+        <div class="flex justify-start items-center scroll-mt-6" id="extracurricular">
             <h1 class="text-lg font-geist font-bold mb-5">- extracurricular</h1>
         </div>
 
-        <section class="flex flex-wrap justify-end gap-6 text-light-red font-geist tracking-wide font-semibold">
+        <section class="flex flex-wrap justify-end gap-5 md:gap-6 text-light-red font-geist tracking-wide font-semibold">
 
-            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-b2-light-yellow w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• 13ª Innovation Week</p>
-                    <p class="text-sm ms-3">Parque de Inovação Tecnológica - 2026 </p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• 13ª Innovation Week</p>
+                    <p class="text-sm ms-3">Parque de Inovação Tecnológica - 2026</p>
                 </div>
-                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+                <img src="img/light red star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-b2-light-yellow w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• AWS Women in Cloud 2026</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• AWS Women in Cloud 2026</p>
                     <p class="text-sm ms-3">Online - Jun 2026</p>
                 </div>
-                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+                <img src="img/light red star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-b2-light-yellow w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Olímpíada Interpreta SP</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Olímpíada Interpreta SP</p>
                     <p class="text-sm ms-3">1º lugar - 2025</p>
                 </div>
-                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+                <img src="img/light red star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-b2-light-yellow w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Olimpíada de Português</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Olimpíada de Português</p>
                     <p class="text-sm ms-3">Destaque regional - 2024</p>
                 </div>
-                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+                <img src="img/light red star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
-            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+            <article class="card-b2-light-yellow w-full sm:w-auto py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <p class="font-roboto italic text-lg scale-y-115">• Olímpíada de Redação SP</p>
+                    <p class="font-roboto italic text-base sm:text-lg scale-y-115">• Olímpíada de Redação SP</p>
                     <p class="text-sm ms-3">3º lugar - 2024</p>
                 </div>
-                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+                <img src="img/light red star.png" alt="" class="w-6 sm:w-7 shrink-0">
             </article>
 
         </section>
 
         <!--Linha de divisão-->
-        <div class="w-full max-w-2xl mx-auto m-20 h-[1px] bg-light-red "></div>
+        <div class="w-full max-w-2xl mx-auto my-14 md:my-20 h-[1px] bg-light-red"></div>
 
     </main>
 
-    <div class="bg-light-red h-6"></div>
-    <footer class="bg-dark-red flex justify-center items-center p-20">
+<!--Faixa animada-->
+<div class="bg-light-red overflow-hidden border-y-2 border-black py-1.5 select-none" aria-hidden="true">
+    <div class="marquee-track font-geist text-light-yellow text-xs sm:text-sm font-bold tracking-widest whitespace-nowrap">
+        <span class="px-4">✦ VAMOS CONVERSAR ✦ VAMOS CRIAR ALGO JUNTOS ✦ ABERTA A OPORTUNIDADES ✦ VAMOS CONVERSAR ✦ VAMOS CRIAR ALGO JUNTOS ✦ ABERTA A OPORTUNIDADES</span>
+        <span class="px-4">✦ VAMOS CONVERSAR ✦ VAMOS CRIAR ALGO JUNTOS ✦ ABERTA A OPORTUNIDADES ✦ VAMOS CONVERSAR ✦ VAMOS CRIAR ALGO JUNTOS ✦ ABERTA A OPORTUNIDADES</span>
+    </div>
+</div>
 
-        <div class="grid grid-cols-2 max-w-5xl gap-8">
-            <div >
-                <p class="font-geist text-light-yellow text-lg">- contatos</p>
+<footer id="contato" class="bg-dark-red relative overflow-hidden flex justify-center items-center px-5 py-14 sm:px-6 md:p-20">
 
-                <h1 class="text-light-red text-7xl font-roboto italic font-semibold "> Ficou interessado?</h1>
+    <!--Estrelas decorativas-->
+    <img src="img/cyan star.png" alt="" class="girar absolute top-4 right-6 w-20 opacity-90 hidden md:block">
+    <img src="img/light red star.png" alt="" class="girar absolute bottom-6 left-6 w-10 opacity-90 hidden md:block">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center w-full max-w-5xl gap-12 md:gap-20 relative">
+
+        <!--Coluna esquerda-->
+        <div>
+            <p class="font-geist text-light-yellow text-lg">- contatos</p>
+
+            <h1 class="font-roboto italic font-semibold leading-[0.85] mt-3 text-6xl sm:text-7xl md:text-8xl">
+                <span class="block text-light-red [text-shadow:4px_4px_0_#3d0404]">Ficou</span>
+                <span class="block text-[2.6rem] sm:text-6xl md:text-7xl">interessado?</span>
+            </h1>
+
+            <p class="font-geist text-light-yellow text-xl sm:text-2xl font-semibold mt-8 md:mt-10">
+                Esses são meus
+                <span class="font-roboto italic font-medium text-3xl sm:text-4xl text-dark-cyan">contatos</span><span class="text-dark-cyan text-3xl sm:text-4xl">!</span>
+            </p>
+
+            <p class="seta-pisca font-geist text-light-yellow text-xl sm:text-2xl font-bold tracking-[0.4em] mt-1">&gt; &gt; &gt;</p>
+        </div>
+
+        <!--Coluna direita: janela de terminal-->
+        <div class="janela md:rotate-1 min-w-0">
+
+            <!--Barra da janela-->
+            <div class="flex items-center justify-end bg-dark-cyan border-b-[3px] border-black px-4 py-2">
+                <p class="font-geist text-light-yellow text-xs tracking-widest">~/contatos.txt</p>
+            </div>
+
+            <!--Linhas-->
+            <div class="bg-light-yellow p-4 sm:p-6 md:p-8 flex flex-col gap-4 sm:gap-5">
+
+                <a href="mailto:daianeksilva07@gmail.com" class="contact-row grid grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-4 px-3 sm:px-4 py-3">
+                    <span class="font-roboto italic font-bold text-sm sm:text-base">e-mail&gt;</span>
+                    <span class="font-geist font-semibold text-xs sm:text-sm break-all min-w-0">daianeksilva07@gmail.com</span>
+                    <span class="seta font-geist font-bold text-xl">↗</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/daianekarine/" target="_blank" class="contact-row grid grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-4 px-3 sm:px-4 py-3">
+                    <span class="font-roboto italic font-bold text-sm sm:text-base">linkedin&gt;</span>
+                    <span class="font-geist font-semibold text-xs sm:text-sm break-all min-w-0">/in/daianekarine/</span>
+                    <span class="seta font-geist font-bold text-xl">↗</span>
+                </a>
+
+                <a href="https://github.com/Dai4ne" target="_blank" class="contact-row grid grid-cols-[auto_1fr_auto] items-center gap-2 sm:gap-4 px-3 sm:px-4 py-3">
+                    <span class="font-roboto italic font-bold text-sm sm:text-base">github&gt;</span>
+                    <span class="font-geist font-semibold text-xs sm:text-sm break-all min-w-0">Dai4ne</span>
+                    <span class="seta font-geist font-bold text-xl">↗</span>
+                </a>
+
+                <!--Copiar e-mail-->
+                <button id="copiar" type="button"
+                        class="botao-copiar font-geist text-sm font-bold text-light-yellow bg-light-red border-2 border-black px-4 py-2 self-start">
+                    $ copiar e-mail
+                </button>
             </div>
         </div>
-        
-    </footer>
+
+    </div>
+</footer>
+
+<script>
+    const botao = document.getElementById('copiar');
+    botao.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('daianeksilva07@gmail.com');
+            botao.textContent = '✓ copiado!';
+        } catch {
+            botao.textContent = 'não deu :(';
+        }
+        setTimeout(() => botao.textContent = '$ copiar e-mail', 2000);
+    });
+</script>
 
     <script src="script.js"></script>
 </body>

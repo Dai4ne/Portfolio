@@ -53,9 +53,6 @@
     transform: translateY(-4px);
 }
 
-.eu{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.482);
-}
 
 /* ------------------------ */
 /*CARDS COM BORDA*/
@@ -71,6 +68,11 @@
     border: 2px solid #600606;
 }
 
+.card-b3-light-yellow {
+    background-color: #FCF6DE;
+    box-shadow: 7px 7px #AE2C2C;
+    border: 5px solid #AE2C2C;
+}
 
 .card-b-light-red {
     background-color: #AE2C2C;
@@ -111,11 +113,86 @@
     left: 0;
     width: 100%;
     height: 30%;
-    background-color: #d2caa0;
+    background-color: #e6deb9;
     transition: 0.5s;
     z-index: -1;
 }
 
 .email:hover::before {
     height: 80%;
+}
+
+/* ---------------------- */
+/*FOOTER*/
+/* Footer - marquee */
+@keyframes marquee {
+    to { transform: translateX(-50%); }
+}
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+/* Footer - estrelas girando */
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+.girar {
+    animation: girar 16s linear infinite;
+}
+
+
+/* Título com contorno */
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 2px #AE2C2C;
+}
+
+/* Janela de contatos */
+.janela {
+    border: 3px solid black;
+    box-shadow: 8px 8px 0 #AE2C2C;
+}
+
+/* Linhas de contato */
+.contact-row {
+    background-color: #FCF6DE;
+    border: 2px solid #600606;
+    box-shadow: 4px 4px 0 #AE2C2C;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+}
+.contact-row:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0 #AE2C2C;
+    background-color: #04506C;
+    color: #FCF6DE;
+}
+.contact-row:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0 #AE2C2C;
+}
+.contact-row .seta {
+    transition: transform 0.2s;
+}
+.contact-row:hover .seta {
+    transform: translate(4px, -4px);
+}
+
+/* Botão copiar */
+.botao-copiar {
+    box-shadow: 3px 3px 0 black;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.botao-copiar:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 black;
+}
+.botao-copiar:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 0 black;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track, .girar, .seta-pisca { animation: none; }
 }
