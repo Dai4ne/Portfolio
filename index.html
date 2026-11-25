@@ -18,7 +18,7 @@
             --color-light-yellow: #FCF6DE; 
             --color-dark-red: #600606;
             --color-light-red: #AE2C2C;
-            --color-dark-cyan: #04506C;
+            --color-dark-cyan: #155F7A;
             --font-roboto: "Roboto Serif", serif;
             --font-geist: "Geist Mono", monospace 
         }
@@ -26,13 +26,13 @@
     <title>Daiane Karine</title>
 </head>
 
-<body class="bg-bg">
+<body class="dot-grid">
 
     <header class="bg-dark-red text-light-yellow h-dvh w-full mb-8 px-6 md:py-8 flex items-center">
 
         <div class="w-full max-w-3xl mx-auto mb-16">
             
-            <h1 class="text-5xl mb-5 md:text-8xl font-roboto font-medium">
+            <h1 class="text-5xl mb-5 mt-8 md:text-8xl font-roboto font-medium">
                 Bem-vindo!
             </h1>
 
@@ -85,10 +85,10 @@
 
     <main class="lg:max-w-4xl mx-auto mt-24">
 
-        <!--Sobre mim--> 
-        <section class="">
+        <!--SOBRE MIM--> 
+        <section id="sobremim">
             <div class="flex justify-start items-center">
-                <h1 class="text-lg font-geist font-bold mb-5" id="sobremim">- sobre mim</h1>
+                <h1 class="text-lg font-geist font-bold mb-5">- sobre mim</h1>
             </div>
             
             <!--Card-->
@@ -111,174 +111,410 @@
             </div>
         </section>
 
-        <div class="max-w-5xl mx-auto mt-16 h-1 bg-[#600606] opacity-60"></div>
+        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
+        <img src="img/light red star.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-12">
 
 
-        <!--Jornada acadêmica-->
-        <section class="">
-            <div class="flex justify-end mt-24">
-                <div>
-                    <h1 class="titulomain text-[#600606] text-6xl font-bold tracking-tight block" id="jornada">Jornada acadêmica</h1>
-                
-                    <h2 class="text-[#AE2C2C] text-5xl font-bold text-right block">Certificados</h2>
-                </div>
+        <!--SKILLS-->
+        <section class="font-geist" id="skills">
+            <div class="flex justify-start items-center">
+                <h1 class="text-lg font-geist font-bold mb-5" id="sobremim">- skills</h1>
             </div>
-            
-                <!--Imagens certificados-->
-            <section class="grid lg:grid-cols-4 place-items-center mt-8">
-                <article class="card-light-yellow bg-light-yellow h-44 w-56"></article>
-                <article class="bg-[#e9e0b5] h-44 w-56"></article>
-                <article class="bg-[#e9e0b5] h-44 w-56"></article>
-                <article class="bg-[#e9e0b5] h-44 w-56"></article>
+
+            <!--HARDSKILLS-->
+            <section class="card-b-light-yellow py-5 px-8 mb-5">
+                <div class="flex flex-col items-end">
+                    <p class="text-light-red font-bold text-4xl">Hard<span class="font-roboto italic font-normal ">skills</span></p> 
+
+                    <div class="w-full max-w-2xl my-4 h-[1px] bg-light-red"></div>
+                </div>
+
+                <div class="flex justify-evenly gap-20">
+                    <div>
+                        <h1 class="font-extrabold text-dark-cyan text-2xl">`front-end</h1>
+                        <p class="text-lg font-bold">> HTML</p>
+                        <p class="text-lg font-bold">> CSS</p>
+                        <p class="text-lg font-bold">> Boostrap</p>
+                        <p class="text-lg font-bold">> Tailwind</p>
+                        <p class="text-lg font-bold">> React</p>
+                    </div>
+                    
+                    <div>
+                        <h1 class="font-extrabold text-dark-cyan text-2xl">`back-end</h1>
+                        <p class="text-lg font-bold">> MySQL</p>
+                        <p class="text-lg font-bold">> APIs REST</p>
+                        <p class="text-lg font-bold">> Flask</p>
+                        <p class="text-lg font-bold">> NodeJS</p>
+                        <p class="text-lg font-bold">> ExpressJS</p>
+                    </div>
+
+                    <div>
+                        <h1 class="font-extrabold text-dark-cyan text-2xl">`linguagens</h1>
+                        <p class="text-lg font-bold">> Python</p>
+                        <p class="text-lg font-bold">> Javascript</p>
+                        <p class="text-lg font-bold">> Typescript</p>
+                        <p class="text-lg font-bold">> SQL</p>
+                    </div>
+                    
+                </div>
             </section>
+
+            <!--SOFTSKILLS E FERRAMENTAS-->
+            <section class="grid grid-cols-2 gap-5 items-start">
+
+                <!--Softskills e estrelas-->
+                <div class="flex flex-col gap-18">
+                    <section class="card-b-light-yellow py-5 px-8">
+                        <p class="text-light-red font-bold text-4xl">Soft<span class="font-roboto italic font-normal ">skills</span></p>
+
+                        <div class="w-full max-w-[300px] my-4 h-[1px] bg-light-red"></div>
+
+                        <p class="text-lg font-bold">> Proatividade</p>
+                        <p class="text-lg font-bold">> Gestão de projetos</p>
+                        <p class="text-lg font-bold">> Comunicação</p>
+                        <p class="text-lg font-bold">> Pensamento crítico</p>
+                        <p class="text-lg font-bold">> Adaptabilidade</p>
+                    </section>
+
+                    <!--Estrelas-->
+                    <div class="flex items-end gap-1 pl-2">
+                        <img src="img/cyan star.png" alt="" class="h-14 w-14">
+                        <img src="img/light red star.png" alt="" class="h-8 w-8">
+                    </div>
+                </div>
+                
+                <section class="card-b-light-red py-5 px-8 text-light-yellow">
+                    <p class="font-medium text-4xl font-roboto italic tracking-tighter">Ferramentas</p>
+
+                    <div class="w-full max-w-[300px] my-4 h-[1px] bg-light-yellow"></div>
+
+                    <p class="text-lg font-semibold">> Figma</p>
+                    <p class="text-lg font-semibold">> Git & GitHub</p>
+                    <p class="text-lg font-semibold">> Jira</p>
+                    <p class="text-lg font-semibold">> Docker</p>
+                    <p class="text-lg font-semibold">> Google Colab</p>
+                    <p class="text-lg font-semibold">> Photoshop</p>
+                    <p class="text-lg font-semibold">> MySQL Workbench</p>
+                    <p class="text-lg font-semibold">> AWS</p>
+                    <p class="text-lg font-semibold">> Vercel</p>
+                </section>
+            </section>     
         </section>
 
 
         <!--Linha de divisão-->
-        <div class="flex items-center mt-16">
-            <img src="img/star2-portfolio.png" alt="" class="w-12 h-12">
-            <div class="flex-1 h-1 bg-[#600606] opacity-60"></div>
+        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
+        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-12">
+
+        <!--PROJETOS-->
+        <div class="flex justify-start items-center">
+            <h1 class="text-lg font-geist font-bold mb-5">- projetos</h1>
         </div>
 
+        <section class="grid md:grid-cols-2 items-start gap-4" id="projetos">
+            
+            <!--Hive-->
+            <article class="card-b-light-yellow px-5 py-6 font-geist">
+                <!--Título e ano-->
+                <div class="flex justify-between">
+                    <h1 class=" text-dark-red font-bold text-3xl">HIVE</h1>
 
-        <!--Projetos-->
-        <section class="grid lg:grid-cols-3 justify-center mt-8 gap-4">
+                    <div class="flex-col items-end text-end font-medium text-sm">
+                        <p class="font-roboto italic -mb-2">2026</p>
+                        <p class="font-roboto italic">acadêmico</p>
+                    </div>
+                </div>
 
-            <!-- Card grande: ocupa 2 colunas -->
-            <article class="bg-[#e9e0b5] col-span-2 h-80 p-6">
-                <div>
-                    <h4 class="text-[#600606] font-bold text-xl">Radar Cidadão</h4>
-                    <a href="https://github.com/APILumina/API1_DSM_Lumina.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
+                <div class="w-full mb-4 h-[1px] bg-light-red"></div>
+
+                <!--Atuação e contexto-->
+                <div class="text-sm">
+                    <p class="font-bold">Atuação:</p>
+                    <p class="text-dark-cyan mb-5 font-medium">Produc Owner | Dev front-end | UI/UX</p>
+                    <P class="font-bold">Software desenvolvido para a Altave com objetivo de gerir Ordens de Serviço para projetos e manutenções, além de proporcionar maior clareza sobre as etapas de andamento das atividades aos funcionários.</P>
+                </div>
+
+                <!--GitHub e tecnologias-->
+                <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
+                    <a href="https://github.com/leovmatiusso/API2_DSM_SprintingCheetahs" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+
+                    <div class="flex flex-wrap justify-end gap-2 text-[13px]">
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MySQL</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Javascript</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Typescript</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">NodeJS</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Express</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">React</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Tailwind</p>
+                    </div>
                 </div>
             </article>
 
-            <!-- Coluna da direita com 3 cards empilhados -->
-            <div class="flex flex-col gap-4">
-                
-                <article class="bg-[#e9e0b5] flex-1 p-4">
-                    <h4 class="text-[#600606] font-bold text-xl">CEC</h4>
-                    <a href="https://github.com/Dai4ne/TCC_CEC.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
+            <!--Radar Cidadão-->
+            <article class="card-b-light-yellow px-5 py-6 font-geist ">
+                <!--Título e ano-->
+                <div class="flex justify-between">
+                    <h1 class=" text-dark-red font-bold text-3xl">Radar<span class="font-roboto italic font-medium text-light-red"> Cidadão</span></h1>
+
+                    <div class="flex-col items-end text-end font-medium text-sm">
+                        <p class="font-roboto italic -mb-2">2026</p>
+                        <p class="font-roboto italic">acadêmico</p>
+                    </div>
+                </div>
+
+                <div class="w-full mb-4 h-[1px] bg-light-red"></div>
+
+                <!--Atuação e contexto-->
+                <div class="text-sm">
+                    <p class="font-bold">Atuação:</p>
+                    <p class="text-dark-cyan mb-5 font-medium">Produc Owner | Dev front-end | Gráficos em Python</p>
+                    <P class="font-bold">Aplicação web focada em transparecer dados da API da Câmara dos Deputados para ajudar eleitores, educadores e jornalistas com a compreenssão de informações técnicas para as eleições de 2026.</P>
+                </div>
+
+                <!--GitHub e tecnologias-->
+                <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
+                    <a href="https://github.com/APILumina/API1_DSM_Lumina" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+
+                    <div class="flex flex-wrap justify-end gap-2 text-[13px]">
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Tailwind</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MariaDB</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Docker</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Flask</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Python</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <!--Universidade Veritas-->
+            <article class="card-b-light-yellow px-5 py-6 font-geist ">
+                <!--Título e ano-->
+                <div class="flex justify-between">
+                    <h1 class=" text-dark-red font-bold text-3xl">Univ.<span class="font-roboto italic font-medium text-light-red"> Veritas</span></h1>
+
+                    <div class="flex-col items-end text-end font-medium text-sm">
+                        <p class="font-roboto italic -mb-2">2026</p>
+                        <p class="font-roboto italic">acadêmico</p>
+                    </div>
+                </div>
+
+                <div class="w-full mb-4 h-[1px] bg-light-red"></div>
+
+                <!--Atuação e contexto-->
+                <div class="text-sm">
+                    <p class="text-dark-cyan mb-5 font-medium">Projeto feito sozinha</p>
+                    <P class="font-bold">Aplicação Web que simula o site de uma universidade, cujo objetivo foi aprimorar habilidades em Front-End com framework, Back-End em Python e Docker, com envio simples de formulário e persistência em banco de dados na nuvem.</P>
+                </div>
+
+                <!--GitHub e tecnologias-->
+                <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
+                    <a href="https://github.com/Dai4ne/Universidade-Veritas" target="_Blank" class="anim1 text-dark-red font-extrabold text-base">github |</a>
+
+                    <div class="flex flex-wrap justify-end gap-2 text-[13px]">
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Docker</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Tailwind</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Flask</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Vercel</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MySQL</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">AWS EC2</p>
+                    </div>
+                </div>
+            </article>
+
+            <!--CEC-->
+            <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist ">
+                <!--Título e ano-->
+                <div class="flex justify-between">
+                    <h1 class="font-bold text-3xl">CEC</h1>
+
+                    <div class="flex-col items-end text-end font-medium text-sm">
+                        <p class="font-roboto italic -mb-2">2026</p>
+                        <p class="font-roboto italic">acadêmico</p>
+                    </div>
+                </div>
+
+                <div class="w-full mb-4 h-[1px] bg-light-yellow"></div>
+
+                <!--Atuação e contexto-->
+                <div class="text-sm">
+                    <p class="font-bold">Atuação:</p>
+                    <p class="text-black mb-5 font-bold">Dev front-end | UI/UX | Gestora</p>
+                    <P class="font-bold">O CEC (Controle de Equipamentos do Candelária), foi o meu Trabalho de Conclusão de Curso de Desenvolvimento de Sistemas, onde o objetivo foi construir uma plataforma intuitiva e facilitadora para o cotidiano dos inspetores e professores ao usar os equipamentos eletrônicos disponíveis no meu ambiente escolar.</P>
+                </div>
+
+                <!--GitHub e tecnologias-->
+                <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
+                    <a href="https://github.com/Dai4ne/TCC_CEC" target="_Blank" class="anim1 text-black font-extrabold text-base">github |</a>
+
+                    <div class="flex flex-wrap justify-end gap-2 text-[13px]">
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">MySQL</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Javascript</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Bootstrap</p>
+                        <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">PHP</p>
+
+                    </div>
+                </div>
+            </article>
+
+            <!--Sistema de relatorio in-app simples e estrelas ao lado-->
+            <div class="md:col-span-2 flex items-end justify-between gap-4">
+
+                <article class="card-b-light-red text-light-yellow px-5 py-6 font-geist w-full md:w-[640px]">
+                    <!--Título e ano-->
+                    <div class="flex justify-between gap-2">
+                        <h1 class="font-bold text-3xl md:whitespace-nowrap">Sis. de <span class="font-roboto italic font-medium">Relatórios in-app</span></h1>
+
+                        <div class="flex-col items-end text-end font-medium text-sm whitespace-nowrap">
+                            <p class="font-roboto italic -mb-2">2026</p>
+                            <p class="font-roboto italic">acadêmico</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-4 h-[1px] bg-light-yellow"></div>
+
+                    <!--Atuação e contexto-->
+                    <div class="text-sm">
+                        <p class="text-black mb-5 font-bold">Projeto feito sozinha</p>
+                        <p class="font-bold">Compilado de vários “sub-sistemas” independentes entre si, aos quais cada um tem um objetivo e regras de negócio diferentes. O objetivo geral do projeto é aprimorar minhas habilidades em JavaScript, usando um layout responsivo, simples e intuitivo para o usuário, com informações armazenadas em memória e geração de um relatório final.</p>
+                    </div>
+
+                    <!--GitHub e tecnologias-->
+                    <div class="flex flex-col items-end text-sm text-light-yellow gap-3">
+                        <a href="https://github.com/Dai4ne/Atividade1_DesenvolvimentoWebII" target="_Blank" class="anim1 text-black font-extrabold text-base">github |</a>
+
+                        <div class="flex flex-wrap justify-end gap-2 text-[13px]">
+                            <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Javascript</p>
+                            <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">Tailwind</p>
+                            <p class="bg-dark-cyan px-2 py-1 rounded-full inline-block tracking-wide">HTML</p>
+                        </div>
+                    </div>
                 </article>
 
-                <article class="bg-[#e9e0b5] flex-1 p-4">
-                    <h4 class="text-[#600606] font-bold text-xl">Web App</h4>
-                    <a href="https://github.com/Dai4ne/Web_App.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                </article>
-
-                <article class="bg-[#e9e0b5] flex-1 p-4">
-                    <h4 class="text-[#600606] font-bold text-xl">Universidade Veritas</h4>
-                    <a href="https://github.com/Dai4ne/Design-Digital.git" class="github bg-[#AE2C2C] text-[#F7F0CC] px-3 py-1 rounded-sm">Github</a>
-                </article>
-
+                <!--Estrelas-->
+                <div class="hidden md:flex items-end gap-1 pr-2">
+                    <img src="img/light red star.png" alt="" class="w-6">
+                    <img src="img/cyan star.png" alt="" class="w-14">
+                </div>
             </div>
 
         </section>
 
+        
+
         <!--Linha de divisão-->
-        <div class="flex items-center mt-16">
-            <div class="flex-1 h-1 bg-[#600606] opacity-60"></div>
-            <img src="img/star2-portfolio.png" alt="" class="w-12 h-12">
+        <div class="w-full max-w-2xl mx-auto mt-20 h-[1px] bg-light-red "></div>
+        <img src="img/cyan star minor.png" alt="" class="h-8 w-8 mx-auto mt-3 mb-18">
+
+
+        <!--CERTIFICADOS-->
+        <div class="flex justify-start items-center" id="certificados">
+            <h1 class="text-lg font-geist font-bold mb-5">- certificados</h1>
         </div>
 
+        <section class="flex flex-wrap gap-6 text-light-yellow font-geist tracking-wide">
 
-        <!--Habilidades-->
-        <section class="" id="habilidades">
-            <div class="flex justify-end mt-24">
+            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
                 <div>
-                    <h1 class="titulomain text-[#600606] text-6xl font-bold tracking-tight block" id="jornada">Habilidade</h1>
-                
-                    <h2 class="text-[#AE2C2C] text-5xl font-bold text-right block">Hard Skills</h2>
+                    <p class="font-roboto italic text-lg scale-y-115">• Informática e Administração</p>
+                    <p class="text-sm ms-3">Fatore - 2022 à 2024</p>
                 </div>
-            </div>
-            
-                <!--Hard skills-->
-            <section class="skill bg-[#e9e0b5] flex justify-evenly mt-4 p-12 rounded-md">
-                <div class="bg-[#AE2C2C] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#e9e0b5] inline text-xl">HTML</h5>
-                </div>
+                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+            </article>
 
-                <div class="bg-[#AE2C2C] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#e9e0b5] inline text-xl">CSS</h5>
+            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Técnica em Desenvolvimento de Sistemas</p>
+                    <p class="text-sm ms-3">ETEC - 2024 à 2025</p>
                 </div>
+                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+            </article>
 
-                <div class="bg-[#AE2C2C] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#e9e0b5] inline text-xl">Python</h5>
+            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Newton in a Box Stem Activities</p>
+                    <p class="text-sm ms-3">Aeroporto Embraer SJC - 22/05/2026</p>
                 </div>
+                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+            </article>
 
-                <div class="bg-[#AE2C2C] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#e9e0b5] inline text-xl">Bootstrap</h5>
+            <article class="card-dark-cyan py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Escola de Inovadores</p>
+                    <p class="text-sm ms-3">Inova CPS - Nov 2026</p>
                 </div>
-
-                <div class="bg-[#AE2C2C] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#e9e0b5] inline text-xl">Tailwind</h5>
-                </div>
-            </section>
-
-                <!--Soft skills-->
-            <div>
-                <h2 class="text-[#AE2C2C] text-5xl font-bold text-right block mt-6">Soft Skills</h2>
-            </div>
-
-            <section class="skill bg-[#AE2C2C] flex justify-evenly mt-4 p-12 rounded-md">
-                <div class="bg-[#e9e0b5] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#AE2C2C] inline text-xl">Comunicação</h5>
-                </div>
-
-                <div class="bg-[#e9e0b5] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#AE2C2C] inline text-xl">Gestão</h5>
-                </div>
-
-                <div class="bg-[#e9e0b5] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#AE2C2C] inline text-xl">Pensamento crítico</h5>
-                </div>
-
-                <div class="bg-[#e9e0b5] px-5 py-2 rounded-sm">
-                    <h5 class="text-[#AE2C2C] inline text-xl">Proatividade</h5>
-                </div>
-            </section>
+                <img src="img/white star.png" alt="" class="w-7 shrink-0">
+            </article>
 
         </section>
 
         <!--Linha de divisão-->
-        <div class="flex items-center mt-16">
-            <img src="img/star2-portfolio.png" alt="" class="w-12 h-12">
-            <div class="flex-1 h-1 bg-[#600606] opacity-60"></div>
+        <div class="w-full max-w-2xl mx-auto m-20 h-[1px] bg-light-red "></div>
+
+        <!--EXTRACURRICULAR-->
+        <div class="flex justify-start items-center" id="extracurricular">
+            <h1 class="text-lg font-geist font-bold mb-5">- extracurricular</h1>
         </div>
-        
 
-        <!--Contato-->
-        <section class="" id="contato">
-            <div class="flex justify-center items-center">
-                <h1 class="titulomain text-[#AE2C2C] text-6xl font-bold tracking-tight mb-12" id="sobremim">Contato</h1>
-            </div>
-            
-            <!--email-->
-            <div class="flex justify-start mb-5" id="formas-contato">
-                <a class="email text-3xl ml-18 ">daianeksilva07@gmail.com</a>
-            </div>
+        <section class="flex flex-wrap justify-end gap-6 text-light-red font-geist tracking-wide font-semibold">
 
-            <!--outros-->
-            <div class="flex flex-col gap-2 justify-start font-semibold" id="">
-                <div class="flex justify-start gap-2 ml-18">
-                    <img src="https://img.shields.io/badge/Instagram-FF0069?style=for-the-badge&logo=Instagram&logoColor=white" alt="Tailwind CSS">
-                </div>   
-
-                <div class="flex justify-start gap-2 ml-18">
-                    <img src="https://img.shields.io/badge/Github-6e5494?style=for-the-badge&logo=Github&logoColor=white" alt="Tailwind CSS">
+            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• 13ª Innovation Week</p>
+                    <p class="text-sm ms-3">Parque de Inovação Tecnológica - 2026 </p>
                 </div>
+                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+            </article>
 
-                <div class="flex justify-start gap-2 ml-18">
-                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-                </div> 
-                
-            </div>
-        
+            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• AWS Women in Cloud 2026</p>
+                    <p class="text-sm ms-3">Online - Jun 2026</p>
+                </div>
+                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+            </article>
+
+            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Olímpíada Interpreta SP</p>
+                    <p class="text-sm ms-3">1º lugar - 2025</p>
+                </div>
+                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+            </article>
+
+            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Olimpíada de Português</p>
+                    <p class="text-sm ms-3">Destaque regional - 2024</p>
+                </div>
+                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+            </article>
+
+            <article class="card-b2-light-yellow py-4 px-5 flex items-center justify-between gap-4">
+                <div>
+                    <p class="font-roboto italic text-lg scale-y-115">• Olímpíada de Redação SP</p>
+                    <p class="text-sm ms-3">3º lugar - 2024</p>
+                </div>
+                <img src="img/light red star.png" alt="" class="w-7 shrink-0">
+            </article>
+
         </section>
+
+        <!--Linha de divisão-->
+        <div class="w-full max-w-2xl mx-auto m-20 h-[1px] bg-light-red "></div>
 
     </main>
 
-    <footer class="bg-[#600606] flex justify-center items-center h-24 mt-12 ">
-        <img src="img/star1-portfolio.png " class="w-18 h-18 object-contain" alt="">
+    <div class="bg-light-red h-6"></div>
+    <footer class="bg-dark-red flex justify-center items-center p-20">
+
+        <div class="grid grid-cols-2 max-w-5xl gap-8">
+            <div >
+                <p class="font-geist text-light-yellow text-lg">- contatos</p>
+
+                <h1 class="text-light-red text-7xl font-roboto italic font-semibold "> Ficou interessado?</h1>
+            </div>
+        </div>
+        
     </footer>
 
     <script src="script.js"></script>

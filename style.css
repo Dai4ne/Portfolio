@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+.dot-grid {
+    min-height: 100vh;
+    background-color: #F8F5E4;
+    background-image: radial-gradient(#e9e0b5 1px, transparent 1.5px);
+    background-size: 24px 24px;
+}
+
 .curriculo {
     font-family:  "Pixelify Sans", sans-serif;
 }
@@ -14,27 +21,27 @@
 
 
 /*Animação botões da navbar*/
-a.nav {
+.anim1 {
     transition: 0.5s;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
 
-.nav::before {
+.anim1::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 0;
     height: 100%;
-    background-color: #AE2C2C;
-    border-radius: 5px;
+    background-color: #e6deb9;
     transition: 0.5s;
     z-index: -1;
+    padding: 1.5px;
 }
 
-.nav:hover::before {
+.anim1:hover::before {
     width: 100%;
 }
 
@@ -58,6 +65,13 @@ a.nav {
     border: 3px solid #600606;
 }
 
+.card-b2-light-yellow {
+    background-color: #FCF6DE;
+    box-shadow: 5px 5px #600606;
+    border: 2px solid #600606;
+}
+
+
 .card-b-light-red {
     background-color: #AE2C2C;
     box-shadow: 5px 5px black;
@@ -79,6 +93,8 @@ a.nav {
     background-color: #600606;
     box-shadow: 5px 5px #AE2C2C; 
 }
+
+
 
 /*Contato - animação do email*/
 .email {
